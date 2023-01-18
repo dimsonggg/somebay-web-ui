@@ -1,6 +1,5 @@
 import {createGlobalStyle} from "styled-components";
 
-// @ts-ignore
 const SomebayGlobalFonts = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
 

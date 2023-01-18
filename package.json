@@ -2,12 +2,13 @@
   "name": "somebay-web-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/esm/index.js",
+  "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
-  "type": "module",
   "scripts": {
-    "build": "tsc --watch"
+    "build": "del-cli --force ./dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "keywords": [],
   "author": "Dmytro Topor (Somebay)",
@@ -15,12 +16,19 @@
   "devDependencies": {
     "@types/react": "^18.0.26",
     "@types/styled-components": "^5.1.26",
+    "del-cli": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",
-    "styled-components": "^5.3.6",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
     "watch": "^0.13.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0",
+    "styled-components": ">=5.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.6"
   }
 }
