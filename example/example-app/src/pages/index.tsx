@@ -10,7 +10,7 @@ const inter = Inter({subsets: ['latin']})
 export default function Home() {
     return (
         <Page>
-            <SomebayGlobalFonts/>
+            <SomebayGlobalFonts />
 
             <Typography.H1>Will the app definitely works on my computer?</Typography.H1>
 
