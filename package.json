@@ -5,10 +5,12 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
+  "fonts-css": "./dist/styles/index.css",
   "scripts": {
-    "build": "del-cli --force ./dist && yarn build:esm && yarn build:cjs",
+    "build": "del-cli --force ./dist && yarn build:esm && yarn build:cjs && yarn build:sass",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:sass": "node-sass ./src/styles/index.scss ./dist/styles/index.css"
   },
   "keywords": [],
   "author": "Dmytro Topor (Somebay)",
@@ -17,6 +19,7 @@
     "@types/react": "^18.0.26",
     "@types/styled-components": "^5.1.26",
     "del-cli": "^5.0.0",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",

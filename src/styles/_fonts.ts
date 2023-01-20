@@ -1,6 +1,6 @@
 const _fonts = {
-    behindContent: `"Behind Content", monospace, sans-serif`,
-    inconsolata: `"Inconsolata", monospace, sans-serif`
+    behindContent: `"Behind Content", sans-serif`,
+    inconsolata: `"Inconsolata", sans-serif`
 }
 
 export default _fonts;

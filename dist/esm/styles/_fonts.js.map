@@ -1,1 +1,1 @@
-{"version":3,"file":"_fonts.js","sourceRoot":"","sources":["../../../src/styles/_fonts.ts"],"names":[],"mappings":"AAAA,IAAM,MAAM,GAAG;IACX,aAAa,EAAE,2CAAyC;IACxD,WAAW,EAAE,wCAAsC;CACtD,CAAA;AAED,eAAe,MAAM,CAAC"}
+{"version":3,"file":"_fonts.js","sourceRoot":"","sources":["../../../src/styles/_fonts.ts"],"names":[],"mappings":"AAAA,IAAM,MAAM,GAAG;IACX,aAAa,EAAE,gCAA8B;IAC7C,WAAW,EAAE,6BAA2B;CAC3C,CAAA;AAED,eAAe,MAAM,CAAC"}
